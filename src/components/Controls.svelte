@@ -1,5 +1,5 @@
 <script>
-	const buttons = ['All', 'GDPPC 1909', 'GDPPC 2018', 'Change'];
+	export let buttons;
 
 	export let activeIdx;
 	const switchIdx = (idx) => {
