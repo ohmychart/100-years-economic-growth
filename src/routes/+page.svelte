@@ -9,12 +9,11 @@
         {show: ['GDPPCT0', 'GDPPCT1', 'yAxisRight', 'arrows'], sort: 'GDPPCT0'},
         {show: ['GDPPCT0'], sort: 'GDPPCT0'},
         {show: ['GDPPCT0', 'GDPPCT1'], sort: 'GDPPCT1'},
-        {show: ['Diff'], sort: 'Diff'}
+        {show: ['DiffT1'], sort: 'DiffT1'}
     ]
 	
 </script>
 
 <Header />
-{activeIdx}
 <Controls bind:activeIdx {buttons}/>
 <Chart options={tabs[activeIdx]}/>
