@@ -4,6 +4,7 @@
 	import { flip } from 'svelte/animate';
 	import { fade, draw } from 'svelte/transition';
 	import { quintOut } from 'svelte/easing';
+	import sticky from '$actions/sticky';
 
 	import dataset from '$data/dataset.json';
 
@@ -13,12 +14,12 @@
 	let width = 1200;
 	$: height = width * 0.9;
 	$: marginLeft = Math.max(width * 0.15, 50);
-	$: marginRight = Math.max(width * 0.25, 50);
+	$: marginRight = Math.max(width * 0.15, 50);
 	$: marginTop = Math.max(height * 0.01, 16);
 	$: marginBottom = Math.max(height * 0.05, 15);
 	$: w = width - marginLeft - marginRight;
 	$: h = height - marginTop - marginBottom;
-	$: xAxisHeight = Math.max(height * 0.03, 25)
+	$: xAxisHeight = Math.max(height * 0.02, 25);
 
 	// Dataset
 	$: dataSorted = sort(dataset, (a, b) => descending(a[options.sort], b[options.sort]));
@@ -37,21 +38,34 @@
 	$: xTicks = xScale.ticks(4).map((tick) => {
 		return {
 			pos: xScale(tick),
-			label: `$${(tick/1000).toFixed(0)}k`
+			label: `$${(tick / 1000).toFixed(0)}k`
 		};
 	});
+
+	let isAxisXStuck = false;
+	function handleStuck(e) {
+		isAxisXStuck = e.detail.isStuck;
+	}
 </script>
 
 <div class="chart-container" bind:clientWidth={width}>
-	<svg class="chart-x-axis" {width} height={xAxisHeight}>
-		<g transform="translate({marginLeft}, {xAxisHeight*0.8})" class="x-axis">
+	<svg
+		class="chart-x-axis"
+		class:isStuck={isAxisXStuck}
+		{width}
+		height={xAxisHeight}
+		use:sticky={{ stickToTop: true }}
+		on:stuck={handleStuck}
+	>
+		<g transform="translate({marginLeft}, {xAxisHeight * 0.8})" class="x-axis">
 			{#each xTicks as tick}
-			<text x={tick.pos} class="tick-label">{tick.label}</text>
-			<line x1={tick.pos} x2={tick.pos} y2=5 class="tick"></line>
+				<text x={tick.pos} class="tick-label">{tick.label}</text>
+				<line x1={tick.pos} x2={tick.pos} y2="5" class="tick" />
 			{/each}
+			<line x1={0} x2={xTicks.slice(-1)[0].pos} y1={5} y2={5} />
 		</g>
 	</svg>
-	<svg class="chart" {width} height={height}>
+	<svg class="chart" {width} {height}>
 		<defs>
 			<marker
 				id="arrow"
@@ -141,7 +155,6 @@
 </div>
 
 <style lang="postcss">
-
 	svg {
 		display: block;
 	}
@@ -150,6 +163,17 @@
 		background-color: transparent;
 		position: sticky;
 		top: 0;
+		transition: background-color 0.2s ease-out;
+
+		&.isStuck {
+			background-image: linear-gradient(
+				160deg,
+				hsl(0deg 0% 13%) 0%,
+				hsl(344deg 0% 10%) 17%,
+				hsl(344deg 0% 7%) 58%,
+				hsl(0deg 0% 0%) 100%
+			);
+		}
 	}
 
 	.marks line {
@@ -193,7 +217,7 @@
 			fill: var(--color-grey);
 			font-size: 0.65rem;
 			text-anchor: middle;
-			transform: translateY(-0.25rem)
+			transform: translateY(-0.25rem);
 		}
 
 		& line {

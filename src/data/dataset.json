@@ -1,1 +1,266 @@
-[{"Country":"Argentina","GDPPCT0":5896.0,"GDPPCT1":18556.38,"DiffT1":12660.38},{"Country":"Australia","GDPPCT0":7940.0,"GDPPCT1":49830.8,"DiffT1":41890.8},{"Country":"Austria","GDPPCT0":5222.0,"GDPPCT1":42988.07,"DiffT1":37766.07},{"Country":"Belgium","GDPPCT0":6330.0,"GDPPCT1":39756.2,"DiffT1":33426.2},{"Country":"Bolivia (Plurinational State of)","GDPPCT0":1651.0,"GDPPCT1":6695.77,"DiffT1":5044.77},{"Country":"Brazil","GDPPCT0":999.0,"GDPPCT1":14033.57,"DiffT1":13034.57},{"Country":"Canada","GDPPCT0":6137.0,"GDPPCT1":44868.74,"DiffT1":38731.74},{"Country":"Chile","GDPPCT0":4042.0,"GDPPCT1":22104.77,"DiffT1":18062.77},{"Country":"China","GDPPCT0":905.0,"GDPPCT1":13101.71,"DiffT1":12196.71},{"Country":"Colombia","GDPPCT0":1197.0,"GDPPCT1":13545.05,"DiffT1":12348.05},{"Country":"Cuba","GDPPCT0":2069.0,"GDPPCT1":8325.63,"DiffT1":6256.63},{"Country":"Denmark","GDPPCT0":5807.0,"GDPPCT1":46312.34,"DiffT1":40505.34},{"Country":"Ecuador","GDPPCT0":1337.0,"GDPPCT1":10638.83,"DiffT1":9301.83},{"Country":"Finland","GDPPCT0":3003.0,"GDPPCT1":38896.7,"DiffT1":35893.7},{"Country":"Former USSR","GDPPCT0":2015.0,"GDPPCT1":19539.15,"DiffT1":17524.15},{"Country":"France","GDPPCT0":5048.0,"GDPPCT1":38515.92,"DiffT1":33467.92},{"Country":"Germany","GDPPCT0":5220.0,"GDPPCT1":46177.62,"DiffT1":40957.62},{"Country":"Greece","GDPPCT0":2601.0,"GDPPCT1":23450.77,"DiffT1":20849.77},{"Country":"India","GDPPCT0":1116.0,"GDPPCT1":6806.5,"DiffT1":5690.5},{"Country":"Indonesia","GDPPCT0":1205.0,"GDPPCT1":11851.74,"DiffT1":10646.74},{"Country":"Italy","GDPPCT0":3826.0,"GDPPCT1":34364.17,"DiffT1":30538.17},{"Country":"Japan","GDPPCT0":2333.2,"GDPPCT1":38673.81,"DiffT1":36340.61},{"Country":"Malaysia","GDPPCT0":919.01,"GDPPCT1":24842.36,"DiffT1":23923.35},{"Country":"Mexico","GDPPCT0":2244.0,"GDPPCT1":16494.08,"DiffT1":14250.08},{"Country":"Myanmar","GDPPCT0":902.0,"GDPPCT1":5838.22,"DiffT1":4936.22},{"Country":"Netherlands","GDPPCT0":5852.0,"GDPPCT1":47474.11,"DiffT1":41622.11},{"Country":"New Zealand","GDPPCT0":7603.0,"GDPPCT1":35336.14,"DiffT1":27733.14},{"Country":"Norway","GDPPCT0":3642.0,"GDPPCT1":84580.14,"DiffT1":80938.14},{"Country":"Panama","GDPPCT0":2648.0,"GDPPCT1":22637.15,"DiffT1":19989.15},{"Country":"Peru","GDPPCT0":1556.0,"GDPPCT1":12310.08,"DiffT1":10754.08},{"Country":"Philippines","GDPPCT0":1235.0,"GDPPCT1":8139.14,"DiffT1":6904.14},{"Country":"Portugal","GDPPCT0":1926.0,"GDPPCT1":27035.6,"DiffT1":25109.6},{"Country":"Romania","GDPPCT0":617.0,"GDPPCT1":20126.29,"DiffT1":19509.29},{"Country":"Singapore","GDPPCT0":2515.0,"GDPPCT1":68402.35,"DiffT1":65887.35},{"Country":"South Africa","GDPPCT0":2391.0,"GDPPCT1":12165.79,"DiffT1":9774.79},{"Country":"Spain","GDPPCT0":2978.0,"GDPPCT1":31496.52,"DiffT1":28518.52},{"Country":"Sri Lanka","GDPPCT0":1838.0,"GDPPCT1":11662.91,"DiffT1":9824.91},{"Country":"Sweden","GDPPCT0":3980.0,"GDPPCT1":45541.89,"DiffT1":41561.89},{"Country":"Switzerland","GDPPCT0":7858.36,"GDPPCT1":61372.73,"DiffT1":53514.37},{"Country":"Taiwan, Province of China","GDPPCT0":1323.0,"GDPPCT1":44663.86,"DiffT1":43340.86},{"Country":"United Kingdom","GDPPCT0":7557.0,"GDPPCT1":38058.09,"DiffT1":30501.09},{"Country":"United States","GDPPCT0":9798.12,"GDPPCT1":55334.74,"DiffT1":45536.62},{"Country":"Uruguay","GDPPCT0":4355.0,"GDPPCT1":20185.84,"DiffT1":15830.84},{"Country":"Venezuela (Bolivarian Republic of)","GDPPCT0":1693.0,"GDPPCT1":10709.95,"DiffT1":9016.95}]
+[
+  {
+    "Country": "Argentina",
+    "GDPPCT0": 5896.0,
+    "GDPPCT1": 18556.38,
+    "DiffT1": 12660.38
+  },
+  {
+    "Country": "Australia",
+    "GDPPCT0": 7940.0,
+    "GDPPCT1": 49830.8,
+    "DiffT1": 41890.8
+  },
+  {
+    "Country": "Austria",
+    "GDPPCT0": 5222.0,
+    "GDPPCT1": 42988.07,
+    "DiffT1": 37766.07
+  },
+  {
+    "Country": "Belgium",
+    "GDPPCT0": 6330.0,
+    "GDPPCT1": 39756.2,
+    "DiffT1": 33426.2
+  },
+  {
+    "Country": "Bolivia",
+    "GDPPCT0": 1651.0,
+    "GDPPCT1": 6695.77,
+    "DiffT1": 5044.77
+  },
+  {
+    "Country": "Brazil",
+    "GDPPCT0": 999.0,
+    "GDPPCT1": 14033.57,
+    "DiffT1": 13034.57
+  },
+  {
+    "Country": "Canada",
+    "GDPPCT0": 6137.0,
+    "GDPPCT1": 44868.74,
+    "DiffT1": 38731.74
+  },
+  {
+    "Country": "Chile",
+    "GDPPCT0": 4042.0,
+    "GDPPCT1": 22104.77,
+    "DiffT1": 18062.77
+  },
+  {
+    "Country": "China",
+    "GDPPCT0": 905.0,
+    "GDPPCT1": 13101.71,
+    "DiffT1": 12196.71
+  },
+  {
+    "Country": "Colombia",
+    "GDPPCT0": 1197.0,
+    "GDPPCT1": 13545.05,
+    "DiffT1": 12348.05
+  },
+  {
+    "Country": "Cuba",
+    "GDPPCT0": 2069.0,
+    "GDPPCT1": 8325.63,
+    "DiffT1": 6256.63
+  },
+  {
+    "Country": "Denmark",
+    "GDPPCT0": 5807.0,
+    "GDPPCT1": 46312.34,
+    "DiffT1": 40505.34
+  },
+  {
+    "Country": "Ecuador",
+    "GDPPCT0": 1337.0,
+    "GDPPCT1": 10638.83,
+    "DiffT1": 9301.83
+  },
+  {
+    "Country": "Finland",
+    "GDPPCT0": 3003.0,
+    "GDPPCT1": 38896.7,
+    "DiffT1": 35893.7
+  },
+  {
+    "Country": "Former USSR",
+    "GDPPCT0": 2015.0,
+    "GDPPCT1": 19539.15,
+    "DiffT1": 17524.15
+  },
+  {
+    "Country": "France",
+    "GDPPCT0": 5048.0,
+    "GDPPCT1": 38515.92,
+    "DiffT1": 33467.92
+  },
+  {
+    "Country": "Germany",
+    "GDPPCT0": 5220.0,
+    "GDPPCT1": 46177.62,
+    "DiffT1": 40957.62
+  },
+  {
+    "Country": "Greece",
+    "GDPPCT0": 2601.0,
+    "GDPPCT1": 23450.77,
+    "DiffT1": 20849.77
+  },
+  {
+    "Country": "India",
+    "GDPPCT0": 1116.0,
+    "GDPPCT1": 6806.5,
+    "DiffT1": 5690.5
+  },
+  {
+    "Country": "Indonesia",
+    "GDPPCT0": 1205.0,
+    "GDPPCT1": 11851.74,
+    "DiffT1": 10646.74
+  },
+  {
+    "Country": "Italy",
+    "GDPPCT0": 3826.0,
+    "GDPPCT1": 34364.17,
+    "DiffT1": 30538.17
+  },
+  {
+    "Country": "Japan",
+    "GDPPCT0": 2333.2,
+    "GDPPCT1": 38673.81,
+    "DiffT1": 36340.61
+  },
+  {
+    "Country": "Malaysia",
+    "GDPPCT0": 919.01,
+    "GDPPCT1": 24842.36,
+    "DiffT1": 23923.35
+  },
+  {
+    "Country": "Mexico",
+    "GDPPCT0": 2244.0,
+    "GDPPCT1": 16494.08,
+    "DiffT1": 14250.08
+  },
+  {
+    "Country": "Myanmar",
+    "GDPPCT0": 902.0,
+    "GDPPCT1": 5838.22,
+    "DiffT1": 4936.22
+  },
+  {
+    "Country": "Netherlands",
+    "GDPPCT0": 5852.0,
+    "GDPPCT1": 47474.11,
+    "DiffT1": 41622.11
+  },
+  {
+    "Country": "New Zealand",
+    "GDPPCT0": 7603.0,
+    "GDPPCT1": 35336.14,
+    "DiffT1": 27733.14
+  },
+  {
+    "Country": "Norway",
+    "GDPPCT0": 3642.0,
+    "GDPPCT1": 84580.14,
+    "DiffT1": 80938.14
+  },
+  {
+    "Country": "Panama",
+    "GDPPCT0": 2648.0,
+    "GDPPCT1": 22637.15,
+    "DiffT1": 19989.15
+  },
+  {
+    "Country": "Peru",
+    "GDPPCT0": 1556.0,
+    "GDPPCT1": 12310.08,
+    "DiffT1": 10754.08
+  },
+  {
+    "Country": "Philippines",
+    "GDPPCT0": 1235.0,
+    "GDPPCT1": 8139.14,
+    "DiffT1": 6904.14
+  },
+  {
+    "Country": "Portugal",
+    "GDPPCT0": 1926.0,
+    "GDPPCT1": 27035.6,
+    "DiffT1": 25109.6
+  },
+  {
+    "Country": "Romania",
+    "GDPPCT0": 617.0,
+    "GDPPCT1": 20126.29,
+    "DiffT1": 19509.29
+  },
+  {
+    "Country": "Singapore",
+    "GDPPCT0": 2515.0,
+    "GDPPCT1": 68402.35,
+    "DiffT1": 65887.35
+  },
+  {
+    "Country": "South Africa",
+    "GDPPCT0": 2391.0,
+    "GDPPCT1": 12165.79,
+    "DiffT1": 9774.79
+  },
+  {
+    "Country": "Spain",
+    "GDPPCT0": 2978.0,
+    "GDPPCT1": 31496.52,
+    "DiffT1": 28518.52
+  },
+  {
+    "Country": "Sri Lanka",
+    "GDPPCT0": 1838.0,
+    "GDPPCT1": 11662.91,
+    "DiffT1": 9824.91
+  },
+  {
+    "Country": "Sweden",
+    "GDPPCT0": 3980.0,
+    "GDPPCT1": 45541.89,
+    "DiffT1": 41561.89
+  },
+  {
+    "Country": "Switzerland",
+    "GDPPCT0": 7858.36,
+    "GDPPCT1": 61372.73,
+    "DiffT1": 53514.37
+  },
+  {
+    "Country": "Taiwan",
+    "GDPPCT0": 1323.0,
+    "GDPPCT1": 44663.86,
+    "DiffT1": 43340.86
+  },
+  {
+    "Country": "United Kingdom",
+    "GDPPCT0": 7557.0,
+    "GDPPCT1": 38058.09,
+    "DiffT1": 30501.09
+  },
+  {
+    "Country": "United States",
+    "GDPPCT0": 9798.12,
+    "GDPPCT1": 55334.74,
+    "DiffT1": 45536.62
+  },
+  {
+    "Country": "Uruguay",
+    "GDPPCT0": 4355.0,
+    "GDPPCT1": 20185.84,
+    "DiffT1": 15830.84
+  },
+  {
+    "Country": "Venezuela",
+    "GDPPCT0": 1693.0,
+    "GDPPCT1": 10709.95,
+    "DiffT1": 9016.95
+  }
+]
