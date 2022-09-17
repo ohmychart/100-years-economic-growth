@@ -13,10 +13,10 @@
 	// Chart dimensions
 	let width = 1200;
 	$: height = width * 0.9;
-	$: marginLeft = Math.max(width * 0.15, 50);
-	$: marginRight = Math.max(width * 0.15, 50);
+	$: marginLeft = Math.max(width * 0.15, 60);
+	$: marginRight = Math.max(width * 0.15, 60);
 	$: marginTop = Math.max(height * 0.01, 16);
-	$: marginBottom = Math.max(height * 0.05, 15);
+	$: marginBottom = 0;
 	$: w = width - marginLeft - marginRight;
 	$: h = height - marginTop - marginBottom;
 	$: xAxisHeight = Math.max(height * 0.02, 25);

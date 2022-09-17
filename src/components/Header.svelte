@@ -1,5 +1,14 @@
+<script>
+	import logo from '$svg/logo.svg';
+</script>
+
 <header>
-	<div class="top-bar">= OHMYCHART!COM</div>
+	<div class="top-bar">
+		<a href="https://ohmychart.com">
+			<div class="logo">{@html logo}</div>
+			 OHMYCHART!COM
+		</a>
+	</div>
 	<div class="content">
 		<p class="subheader">Visualizing change in GDP per capita since 1909</p>
 		<h1 class="header">Economic growth: XX century</h1>
@@ -25,14 +34,37 @@
 		color: var(--color-black);
 		font-size: 0.6rem;
 		font-weight: 600;
-		line-height: 1em;
+		line-height: 0;
 		padding: 0.3em 0.8em;
+		display: flex;
+		align-items: center;
+		flex-direction: row;
+
+		& a {
+			color: inherit;
+			text-decoration: none;
+			display: flex;
+			align-items: center;
+			flex-direction: row;
+			transition: all 0.3s ease;
+		}
+
+		& a:hover {
+			color: var(--color-primary);
+			fill: var(--color-primary);
+		}
+
+		& .logo {
+			width: 0.6rem;
+			display: inline-block;
+			margin-right: 0.5em;
+		}
 	}
 
 	.content {
 		max-width: var(--content-width);
 		margin: 3rem auto;
-        padding: 0 0.5em;
+		padding: 0 var(--content-side-padding);
 	}
 
 	h1.header {

@@ -2,6 +2,7 @@
 	import Header from '$components/Header.svelte';
 	import Controls from '$components/Controls.svelte';
 	import Chart from '$components/Chart.svelte';
+    import Footer from '$components/Footer.svelte';
 
 	let activeIdx = 0;
 	const buttons = ['All', 'GDPPC 1909', 'GDPPC 2018', 'Change'];
@@ -28,7 +29,10 @@
     <div class="chart">
         <Chart options={tabs[activeIdx]} />
     </div>
-    
+</div>
+
+<div class="footer">
+    <Footer />
 </div>
 
 <style lang="postcss">
@@ -40,11 +44,15 @@
     .controls, .title {
         max-width: var(--content-width);
         margin: 0 auto 1.5em auto;
-        padding: 0 1.5em;
+        padding: 0 var(--content-side-padding);
     }
 
     .chart {
-        padding: 0 1.5em;
+        padding: 0 var(--content-side-padding);
+    }
+
+    .viz {
+        margin-bottom: 3em;
     }
 
     .title {
