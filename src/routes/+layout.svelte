@@ -6,7 +6,7 @@
 <svelte:head>
 	<meta charset="utf-8" />
 	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-	<title>Economic Growth in 20th Century</title>
+	<title>100 Years of Economic Growth — Oh My Chart!</title>
 	<meta
 		name="description"
 		content="Visualization of the world's oil and gas reserves in terms of vulnerability expressed through the Fragile State Index levels."

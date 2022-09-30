@@ -1,17 +1,26 @@
 <script>
+	import HeaderBar from '$components/HeaderBar.svelte';
 	import logo from '$svg/logo.svg';
+
+	let width;
 </script>
 
 <header>
-	<div class="top-bar">
-		<a href="https://ohmychart.com">
-			<div class="logo">{@html logo}</div>
-			 OHMYCHART!COM
-		</a>
+	
+
+	<div class="top-bar" bind:clientWidth={width}>
+		<HeaderBar {width} height={width*0.04} fillRGB={[250, 250, 250]}/>
+		<div class="logo-container">
+			<a href="https://ohmychart.com">
+				<div class="logo">{@html logo}</div>
+				 OHMYCHART!COM
+			</a>
+		</div>
+
 	</div>
 	<div class="content">
-		<p class="subheader">Visualizing change in GDP per capita since 1909</p>
-		<h1 class="header">Economic growth: XX century</h1>
+		<p class="subheader">Visualizing change in GDP per capita from 1909 to 2018</p>
+		<h1 class="header">100 years of economic growth</h1>
 		<p class="intro">
 			Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus rhoncus orci sed gravida
 			ultrices. Phasellus rutrum est at lectus pharetra, at posuere tellus rhoncus. Nulla mattis est
@@ -30,15 +39,11 @@
 	}
 
 	.top-bar {
-		background-color: var(--color-white);
-		color: var(--color-black);
+		color: var(--color-white);
 		font-size: 0.6rem;
 		font-weight: 600;
 		line-height: 0;
-		padding: 0.3em 0.8em;
-		display: flex;
-		align-items: center;
-		flex-direction: row;
+		padding:0;
 
 		& a {
 			color: inherit;
@@ -47,6 +52,8 @@
 			align-items: center;
 			flex-direction: row;
 			transition: all 0.3s ease;
+			fill: var(--color-white);
+			text-shadow: 0px 0px 14px var(--color-black);
 		}
 
 		& a:hover {
@@ -58,6 +65,13 @@
 			width: 0.6rem;
 			display: inline-block;
 			margin-right: 0.5em;
+		}
+
+		& .logo-container {
+			display: flex;
+			justify-content: flex-end;
+			margin-top: -0.5rem;
+			margin-right: 0.5rem;
 		}
 	}
 

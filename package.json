@@ -21,6 +21,7 @@
 		"prettier": "^2.6.2",
 		"prettier-plugin-svelte": "^2.7.0",
 		"svelte": "3.49.0",
+		"svelte-canvas": "^0.7.1",
 		"svelte-preprocess": "^4.10.7",
 		"vite": "^3.1.0",
 		"vite-plugin-svgstring": "^1.0.0"
