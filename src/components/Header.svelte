@@ -1,5 +1,6 @@
 <script>
 	import HeaderBar from '$components/HeaderBar.svelte';
+	import HowToRead from '$components/HowToRead.svelte';
 	import logo from '$svg/logo.svg';
 
 	let width;
@@ -26,6 +27,9 @@
 			top.
 		</p>
 		<p class="source">Data source: GDP Per Capita ($ in 2011 prices) from Maddison Project Database 2020</p>
+		<div class="how-to-read">
+			<HowToRead />
+		</div>
 	</div>
 </header>
 
@@ -96,7 +100,7 @@
 	}
 
 	p.source {
-		font-size: 0.7rem;
+		font-size: 0.8rem;
 		color: var(--color-grey);
 	}
 </style>
