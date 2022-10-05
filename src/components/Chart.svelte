@@ -72,11 +72,12 @@
 				viewBox="0 0 10 10"
 				refX="5"
 				refY="5"
-				markerWidth="6"
-				markerHeight="6"
+				markerWidth={width*0.007}
+				markerHeight={width*0.007}
 				orient="auto-start-reverse"
 				stroke="#989898"
 				stroke-width="2"
+				fill="none"
 			>
 				<path d="M 0 0 L 10 5 L 0 10" />
 			</marker>

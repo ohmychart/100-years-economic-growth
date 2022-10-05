@@ -9,7 +9,7 @@
 	<title>100 Years of Economic Growth — Oh My Chart!</title>
 	<meta
 		name="description"
-		content="Visualization of the world's oil and gas reserves in terms of vulnerability expressed through the Fragile State Index levels."
+		content="Visualization of GDP Per Capita change by country from 1909 to 2018"
 	/>
 
 	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />

@@ -20,8 +20,7 @@
 	let grid = [];
 
 	$: if (width) {
-		console.log('if width', width);
-		gw = width * 0.007;
+		gw = width * 0.0055;
 		r = gw * 0.5;
 		gap = gw * 0.04;
 		nx = Math.ceil(width / gw);
@@ -29,7 +28,6 @@
 
 		grid = [];
 		for (let i = 0; i <= ny; i++) {
-			console.log('i');
 			for (let j = 0; j <= nx; j++) {
 				grid.push({
 					cx: j * gw,
@@ -43,7 +41,7 @@
 </script>
 
 <Canvas {width} {height}>
-	<!-- <Filter offX={2} offY={3} blur={0} color="#00c6cf" /> -->
+	<!-- <Filter offX={2} offY={2} blur={2} color="#00c6cf" /> -->
 	{#each grid as { cx, cy, r, fill }}
 		<Circle {cx} {cy} {r} {fill} />
 	{/each}

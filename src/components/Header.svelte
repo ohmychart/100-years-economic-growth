@@ -6,26 +6,26 @@
 </script>
 
 <header>
-	
-
 	<div class="top-bar" bind:clientWidth={width}>
-		<HeaderBar {width} height={width*0.04} fillRGB={[250, 250, 250]}/>
+		<HeaderBar {width} height={width * 0.025} fillRGB={[250, 250, 250]} />
 		<div class="logo-container">
 			<a href="https://ohmychart.com">
 				<div class="logo">{@html logo}</div>
-				 OHMYCHART!COM
+				OHMYCHART!COM
 			</a>
 		</div>
-
 	</div>
 	<div class="content">
 		<p class="subheader">Visualizing change in GDP per capita from 1909 to 2018</p>
-		<h1 class="header">100 years of economic growth</h1>
+		<h1 class="header">100 (almost) years of economic growth</h1>
 		<p class="intro">
-			Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus rhoncus orci sed gravida
-			ultrices. Phasellus rutrum est at lectus pharetra, at posuere tellus rhoncus. Nulla mattis est
-			id arcu tincidunt, quis scelerisque nisi imperdiet.
+			In the early 1900s the list of the most developed countries was different to what we had at
+			the beginning of the 21st century. Before World War I, Argentina had GDP per capita higher
+			than many European countries. 100 years after it's far behind Western Europe. In contrast,
+			countries such as Norway, Singapore, Japan and Taiwan have closed the gap and risen to the
+			top.
 		</p>
+		<p class="source">Data source: GDP Per Capita ($ in 2011 prices) from Maddison Project Database 2020</p>
 	</div>
 </header>
 
@@ -43,7 +43,7 @@
 		font-size: 0.6rem;
 		font-weight: 600;
 		line-height: 0;
-		padding:0;
+		padding: 0;
 
 		& a {
 			color: inherit;
@@ -93,5 +93,10 @@
 		font-size: 1.2rem;
 		font-weight: 500;
 		margin-bottom: 0;
+	}
+
+	p.source {
+		font-size: 0.7rem;
+		color: var(--color-grey);
 	}
 </style>
